@@ -1,0 +1,160 @@
+
+.principal
+{
+    background-color: rgb(3, 180, 121);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.padre {
+    background-color: rgb(104, 53, 134);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas que ocupan igual fracción del ancho disponible */
+    grid-template-rows: repeat(5, 1fr); /* 5 filas que ocupan igual fracción del alto disponible */
+    justify-content: stretch; /* Estira los elementos para ocupar el espacio asignado */
+    align-content: stretch; /* Alinea el contenido para ocupar todo el espacio vertical */
+    margin: 60px; /* Elimina cualquier margen exterior */
+    padding: 0; /* Elimina cualquier relleno interior */
+    height: 100vh; /* Altura total del viewport */
+    width: 100vw; /* Ancho total del viewport */
+    grid-gap: 0; /* Elimina el espacio entre las cajas */   
+}
+.padre2{
+    background-color: coral;
+    display: flex; /* Establece el modelo de caja flexible */
+    margin: 60px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: row; /* Organiza los elementos en una columna */
+    height: 100vh; /* Altura total del viewport */
+    width: 100vw; /* Ancho total del viewport */
+
+}
+.padre3{
+    background-color: lemonchiffon;
+    display: flex; /* Establece el modelo de caja flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 60px;
+    flex-direction: row; /* Organiza los elementos en una columna */
+    height: auto; /* Altura total del viewport */
+    width: auto; /* Ancho total del viewport */
+
+}
+.hijo{
+    background-color: goldenrod;
+    border-style: solid;
+    border-color: dimgray;
+    grid-area: auto;
+    grid-row: auto;
+    font-size: 50px;
+}
+.hijo1{
+    background-color: rgb(173, 95, 167);
+    
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 1/5;
+}
+.hijo2{
+    background-color: chartreuse;
+   
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 1/3;
+}
+.hijo3{
+    background-color: rgb(117, 30, 56);
+    margin-left: 0%;
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    
+}
+.hijo4{
+    background-color: rgb(198, 201, 30);
+    
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 4/5;
+    
+}
+.hijo6{
+    background-color: rgb(199, 72, 34);
+
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 2/5;
+}
+
+.hijo7{
+    background-color: rgb(87, 58, 4);
+
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
+.hijo8{
+    background-color: rgb(33, 65, 2);
+
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 3/5;
+}
+.hijo9{
+    background-color: rgb(0, 132, 255);
+ 
+    border-style: solid;
+    border-color: dimgray;
+    font-size: 50px;
+    grid-column: 3/5;
+}
+.flex{
+    border: 2px solid black;
+    background-color: rgb(32, 179, 184);
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 230px;
+    margin: 30px;
+    padding: 15px;
+}
+
+.caja1{
+    background-color: rgb(228, 186, 218);
+    width: 310px;
+    height: 100px;
+    margin: auto;
+    margin-top: 1%;
+}
+.caja2{
+    
+    background-color: rgb(235, 200, 227);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 1%;
+}
+.parte1{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.parte2{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
